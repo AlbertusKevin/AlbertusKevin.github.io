@@ -5,7 +5,8 @@ body {
 }
 
 hr {
-    width: 500px;
+    min-width: 300px;
+    max-width: 600px;
     border-top: 2px solid;
     color: #999;
 }
