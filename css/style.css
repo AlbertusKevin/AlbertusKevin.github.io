@@ -1,6 +1,7 @@
 body {
     font-family: montserratregular;
     position: relative;
+    margin-top: 40px;
 }
 
 hr {
@@ -31,6 +32,18 @@ section h2 {
 
 .odd {
     background-color: rgba(12, 52, 230, 0.212);
+}
+
+/* ========================================================================== 
+*    navbar
+=============================================================================*/
+nav {
+    font-family: montserratmedium;
+}
+
+.navbar-brand {
+    font-family: chunkfive-print;
+    font-size: 20px;
 }
 
 /* ========================================================================== 
@@ -81,6 +94,10 @@ section h2 {
 
 section.contact-media{
     min-height: 350px;
+}
+
+.gmail {
+    display: block;
 }
 
 /* 
