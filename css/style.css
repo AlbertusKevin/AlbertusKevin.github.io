@@ -77,6 +77,31 @@ nav {
 /* ========================================================================== 
 *    untuk bagian portfolio
 =============================================================================*/
+.vin-card{
+    margin: auto;
+    padding: 15px 30px;
+    width: 100%;
+    border-radius: 8px;
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    margin-bottom: 35px;
+    box-shadow: 10px 8px 10px rgb(0,0,0,0.5);
+    background-color: rgba(255,255,255,0.8);
+}
+
+.vin-card h3{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: montserratmedium;
+}
+
+.vin-card p {
+    text-indent: 0;
+    line-height: 1.7;
+}
+
+/* ========================================================================== 
+*    untuk bagian portfolio
+=============================================================================*/
 .card {
     min-height: 650px;
 }
