@@ -43,8 +43,27 @@ nav {
 }
 
 .navbar-brand {
+    opacity: 0;
+    transform: translate(0, -20px);
+    transition: 1s;
     font-family: chunkfive-print;
     font-size: 20px;
+}
+
+.navbar-brand-show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.page-scroll-nav {
+    opacity: 0;
+    transform: translate(25px,0);
+    transition: 1s;
+}
+
+.page-scroll-show {
+    opacity: 1;
+    transform: translate(0,0);
 }
 
 /* ========================================================================== 
@@ -54,19 +73,26 @@ nav {
     /* position: absolute;
     top: 100px;
     left: 44%; */
-    width: 225px;
+    width: 250px;
     border-radius: 50%;
-    border: 3px solid rgba(1, 0, 77, 0.8);
+    border: 3px solid #929292;
 }
 
 .jumbotron {
-    background-color: rgba(0, 10, 97, 0.904);
+    /* background-color: rgba(0, 10, 97, 0.904); */
+    background-image: url('../image/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0, -250px;
     border-radius: 0%;
+    height: 545px;
+    color: white;
+    overflow: hidden;
 }
 
-.jumbotron p,
-.jumbotron h1 {
-    color: white;
+.jumbotron h1, .jumbotron p {
+    text-shadow: 0 0 3px wheat;
 }
 
 .jumbotron h1 {
@@ -75,8 +101,41 @@ nav {
     font-weight: 600;
 }
 
+.jumbotron p {
+    font-size: 16px;
+}
+
 /* ========================================================================== 
-*    untuk bagian portfolio
+*    untuk bagian about
+=============================================================================*/
+.heading-about {
+    opacity: 0;
+    transform: translate(0, -150px);
+    transition: 1s;
+}
+
+.heading-about-show {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.about-left, .about-right {
+    opacity: 0;
+    transform: translate(-150px, 0);
+    transition: 1s;
+}
+
+.about-right {
+    transform: translate(150px, 0);
+}
+
+.about-left.p-show, .about-right.p-show {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* ========================================================================== 
+*    untuk bagian experience
 =============================================================================*/
 .vin-card{
     margin: auto;
@@ -105,11 +164,30 @@ nav {
 =============================================================================*/
 .card {
     min-height: 650px;
+    opacity: 0;
+    transform: translate(0,150px);
+    transition: 1s;
 }
 
-/* 
+.card.show {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.heading-portfolio {
+    opacity: 0;
+    transform: translate(0, -150px);
+    transition: 1s;
+}
+
+.heading-portfolio-show {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* =============================================================================
 *   untuk bagian contact dan media
-*/
+============================================================================= */
 .contact-media img {
     width: 125px;
 }
@@ -126,9 +204,9 @@ section.contact-media{
     display: block;
 }
 
-/* 
+/* =============================================================================
 *   untuk bagian footer
-*/
+============================================================================= */
 footer {
     background-color: black;
     left: 0;
@@ -140,7 +218,9 @@ footer {
     font-size: 0.8em;
 }
 
-/** kustomisasi font  */
+/* =============================================================================
+* kustomisasi font  
+=============================================================================*/
 @font-face {
     font-family: 'chunkfive-print';
     src: url('../font/chunkfive-print.woff');
