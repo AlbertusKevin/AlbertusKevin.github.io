@@ -21,7 +21,7 @@ $(window).on("load", () => {
   $(".page-scroll-nav").each((i) => {
     setTimeout(() => {
       $(".page-scroll-nav").eq(i).addClass("page-scroll-show");
-    }, 300 * (i + 1));
+    }, 200 * (i + 1));
   });
 });
 
@@ -42,7 +42,7 @@ $(window).scroll(function () {
 
   if (
     wScroll > $(".about").offset().top - 400 &&
-    wScroll < $(".about").offset().top + 75
+    wScroll < $(".about").offset().top + 300
   ) {
     $(".heading-about").addClass("heading-about-show");
     $(".about-left").addClass("p-show");
@@ -53,7 +53,7 @@ $(window).scroll(function () {
     $(".about-right").removeClass("p-show");
   }
 
-  if (wScroll > $(".card").offset().top - 600) {
+  if (wScroll > $(".card").offset().top - 700) {
     $(".heading-portfolio").addClass("heading-portfolio-show");
     $(".card").each((i) => {
       setTimeout(() => {
@@ -66,6 +66,41 @@ $(window).scroll(function () {
       setTimeout(() => {
         $(".card").eq(i).removeClass("show");
       }, 500 * (i + 1));
+    });
+  }
+
+  if (
+    wScroll > $(".experience").offset().top - 600 &&
+    wScroll < $(".experience").offset().top + 1500
+  ) {
+    $(".heading-exp").addClass("heading-exp-show");
+    $(".vin-card").each((i) => {
+      setTimeout(() => {
+        $(".vin-card").eq(i).addClass("show-vin-card");
+      }, 500 * (i + 1));
+    });
+  } else {
+    $(".heading-exp").removeClass("heading-exp-show");
+    $(".vin-card").each((i) => {
+      setTimeout(() => {
+        $(".vin-card").eq(i).removeClass("show-vin-card");
+      }, 500 * (i + 1));
+    });
+  }
+
+  if (wScroll > $(".heading-media").offset().top - 700) {
+    $(".heading-media").addClass("show-media");
+    $(".image-media").each((i) => {
+      setTimeout(() => {
+        $(".image-media").eq(i).addClass("show-media");
+      }, 300 * (i + 1));
+    });
+  } else {
+    $(".heading-media").removeClass("show-media");
+    $(".image-media").each((i) => {
+      setTimeout(() => {
+        $(".image-media").eq(i).removeClass("show-media");
+      }, 300 * (i + 1));
     });
   }
 });

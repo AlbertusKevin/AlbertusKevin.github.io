@@ -137,6 +137,17 @@ nav {
 /* ========================================================================== 
 *    untuk bagian experience
 =============================================================================*/
+.heading-exp {
+    opacity: 0;
+    transition: 1s;
+    transform: translate(0, -80px);
+}
+
+.heading-exp-show {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
 .vin-card{
     margin: auto;
     padding: 15px 30px;
@@ -157,6 +168,19 @@ nav {
 .vin-card p {
     text-indent: 0;
     line-height: 1.7;
+}
+
+.odd-card, .even-card {
+    transition: 1s;
+    transform: translate(-2000px, 0);
+}
+
+.even-card {
+    transform: translate(2000px,0);
+}
+
+.show-vin-card {
+    transform: translate(0,0);
 }
 
 /* ========================================================================== 
@@ -202,6 +226,23 @@ section.contact-media{
 
 .gmail {
     display: block;
+}
+
+.heading-media {
+    opacity: 0;
+    transform: translate(0,150px);
+    transition: 1s;
+}
+
+.image-media {
+    opacity: 0;
+    transform: translate(80px, 0);
+    transition: 1s;
+}
+
+.show-media {
+    opacity: 1;
+    transform: translate(0,0);
 }
 
 /* =============================================================================
