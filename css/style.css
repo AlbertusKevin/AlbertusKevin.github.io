@@ -2,6 +2,8 @@ body {
     font-family: montserratregular;
     position: relative;
     margin-top: 40px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 hr {
