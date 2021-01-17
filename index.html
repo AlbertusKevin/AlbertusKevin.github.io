@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <!-- Untuk bagian Navbar -->
+  <!--? Untuk bagian Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand page-scroll" href="#home">Vin Albertus</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -29,14 +29,14 @@
     </div>
   </nav>
 
-  <!-- Jumbotron untuk halaman home dan profile picture -->
+  <!--? Jumbotron untuk halaman home dan profile picture -->
   <div class="jumbotron text-center mb-0">
     <img class="mt-4" src="image/profile_picture.jpg" alt="profile_picture" />
     <h1>Albertus Kevin</h1>
     <p>Web Developer | Software Engineer | Student</p>
   </div>
 
-  <!-- Untuk bagian about me -->
+  <!--? Untuk bagian about me -->
   <section class="about even" id="about">
     <div class="container">
       <div class="row">
@@ -70,7 +70,7 @@
     </div>
   </section>
 
-  <!-- untuk bagian experience -->
+  <!--? untuk bagian experience -->
   <section class="experience odd" id="experience">
     <div class="container">
       <div class="row">
@@ -141,15 +141,15 @@
               </ul>
             </p>
           </div>
-          <div class="vin-card odd-card">
+          <!-- <div class="vin-card odd-card">
             <h3>Portfolio Projects</h3>
             <h6 class="card-subtitle mb-3 text-muted">Since June 2020</h6>
             <p>
               Creating various kinds of web applications with different languages ​​and technologies, as a form of
               honing programming skills, project management, and engineering software.
             </p>
-          </div>
-          <div class="vin-card even-card">
+          </div> -->
+          <div class="vin-card odd-card">
             <h3>
               President of Santa Maria 1 High School Student Council (OSIS)
               <h6 class="card-subtitle mb-3 text-muted">From August 2016 until August 2017</h6>
@@ -164,20 +164,20 @@
               </ul>
             </p>
           </div>
-          <div class="vin-card odd-card">
+          <!-- <div class="vin-card odd-card">
             <h3>Private Teacher</h3>
             <h6 class="card-subtitle mb-3 text-muted">Since September 2016</h6>
             <p>
               Guide students to work on assignments, help understand lesson concepts, and share experiences and life
               morals.
             </p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
   </section>
 
-  <!-- untuk bagian portfolio -->
+  <!--? untuk bagian portfolio -->
   <section class="portfolio even" id="portfolio">
     <div class="container">
       <div class="row">
@@ -186,9 +186,9 @@
           <hr />
         </div>
       </div>
-      <!-- List daftar projek portfolio yang sedang dan/atau telah dikerjakan -->
+      <!--? List daftar projek portfolio yang sedang dan/atau telah dikerjakan -->
       <div class="row">
-        <div class="col-md-4 mb-5">
+        <div class="col-md-6 mb-5">
           <div class="card">
             <div class="card-header" style="min-height: 250px;">
               <img src="image/portfolio/celatuk.png" class="card-img-top" alt=" Celatuk">
@@ -205,8 +205,7 @@
             </div>
           </div>
         </div>
-
-        <div class="col-md-4 mb-5">
+        <div class="col-md-6 mb-5">
           <div class="card">
             <div class="card-header" style="min-height: 250px;">
               <img src="image/portfolio/meuble.png" class="card-img-top" alt="Pesona Meuble">
@@ -224,63 +223,84 @@
             </div>
           </div>
         </div>
-
-        <div class="col-md-4 mb-5">
-          <div class="card">
-            <div class="card-header" style="min-height: 250px;">
-              <img src="image/portfolio/library.PNG" class="card-img-top" alt="Pesona Meuble">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">My Library</h5>
-              <h6 class="card-subtitle mb-3 text-muted">Library management, November 2020</h6>
-              <p class="card-text">Simple collaborative project on library management applications using PHP Native,
-                Bootstrap and MongoDB</p>
-            </div>
-            <small class="text-muted mb-3 ml-3">Status : On Development</small>
-            <div class="card-footer text-right">
-              <a href="https://github.com/AlbertusKevin/PerpustakaanMantap" class="btn btn-primary">Github</a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
+  <!--? untuk bagian mini projek -->
   <section class="mini-project odd" id="mini-project">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="heading-portfolio text-center">Mini Project</h2>
+          <h2 class="heading-mini-project text-center">Mini Project</h2>
           <hr>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <div class="modal-dialog">
+          <div class="modal-dialog mini-left">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                <h5 class="modal-title" id="exampleModalLabel">My Library</h5>
               </div>
               <div class="modal-body">
-
+                <div class="row">
+                  <div class="col-md-12">
+                    <h6 class="card-subtitle mb-3 text-muted">Library management, December 2020</h6>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="image/portfolio/library.PNG" alt="Pesona Meuble" class="img-thumbnail">
+                  </div>
+                  <div class="col-md-6">
+                    Simple collaborative project on library management applications using PHP Native,
+                    Bootstrap and MongoDB
+                  </div>
+                </div>
+                <div class="row text-md-right">
+                  <div class="col-md-12">
+                    <small class="text-muted mb-3 ml-3">Status : On Development</small>
+                  </div>
+                </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="https://github.com/AlbertusKevin/PerpustakaanMantap" type="button"
+                  class="btn btn-primary">Github</a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="modal-dialog">
+          <div class="modal-dialog mini-right">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Hermaeous Mora</h5><br>
               </div>
               <div class="modal-body">
-
+                <div class="row">
+                  <div class="col-md-12">
+                    <h6 class="card-subtitle mb-3 text-muted">Library management, January 2021</h6>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="image/portfolio/Hermaeous-Mora.PNG.png" alt="Hermaeous Mora" class="img-thumbnail">
+                  </div>
+                  <div class="col-md-6">
+                    Simple project using the java language, procedural, with a simple console interface using the file
+                    feature as a database
+                  </div>
+                </div>
+                <div class="row text-md-right">
+                  <div class="col-md-12">
+                    <small class="text-muted mb-3 ml-3">Status : complete</small>
+                  </div>
+                </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="https://github.com/AlbertusKevin/Hermaeus-Mora" type="button"
+                  class="btn btn-primary">Github</a>
               </div>
             </div>
           </div>

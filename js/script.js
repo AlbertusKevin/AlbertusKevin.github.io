@@ -70,6 +70,19 @@ $(window).scroll(function () {
   }
 
   if (
+    wScroll > $(".mini-project").offset().top - 400 &&
+    wScroll < $(".mini-project").offset().top + 300
+  ) {
+    $(".heading-mini-project").addClass("heading-mini-project-show");
+    $(".mini-left").addClass("mini-left-show");
+    $(".mini-right").addClass("mini-right-show");
+  } else {
+    $(".heading-mini-project").removeClass("heading-mini-project-show");
+    $(".mini-left").removeClass("mini-left-show");
+    $(".mini-right").removeClass("mini-right-show");
+  }
+
+  if (
     wScroll > $(".experience").offset().top - 600 &&
     wScroll < $(".experience").offset().top + 1500
   ) {
