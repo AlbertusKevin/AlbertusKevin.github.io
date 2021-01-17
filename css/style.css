@@ -91,6 +91,7 @@ nav {
     height: 650px;
     color: white;
     overflow: hidden;
+    position: relative;
 }
 
 .jumbotron h1, .jumbotron p {
