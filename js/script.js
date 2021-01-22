@@ -70,8 +70,8 @@ $(window).scroll(function () {
   }
 
   if (
-    wScroll > $(".mini-project").offset().top - 400 &&
-    wScroll < $(".mini-project").offset().top + 600
+    wScroll > $(".mini-project").offset().top - 600 &&
+    wScroll < $(".mini-project").offset().top + 1600
   ) {
     $(".heading-mini-project").addClass("heading-mini-project-show");
     $(".mini-left").addClass("mini-left-show");
