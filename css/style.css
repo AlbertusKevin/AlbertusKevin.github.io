@@ -213,8 +213,18 @@ nav {
 }
 
 /* =============================================================================
-*   untuk bagian contact dan media
+*   untuk bagian mini project
 ============================================================================= */
+.mini-project img{
+    margin-bottom: 20px;
+}
+
+.mini-project p{
+    text-indent: 0px;
+    line-height: 1.5;
+    text-align: left;
+}
+
 .heading-mini-project {
     opacity: 0;
     transform: translate(0, -150px);
