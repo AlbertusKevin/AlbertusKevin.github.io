@@ -42,7 +42,7 @@ $(window).scroll(function () {
 
   if (
     wScroll > $(".about").offset().top - 400 &&
-    wScroll < $(".about").offset().top + 300
+    wScroll < $(".about").offset().top + 600
   ) {
     $(".heading-about").addClass("heading-about-show");
     $(".about-left").addClass("p-show");
@@ -90,14 +90,14 @@ $(window).scroll(function () {
     $(".vin-card").each((i) => {
       setTimeout(() => {
         $(".vin-card").eq(i).addClass("show-vin-card");
-      }, 500 * (i + 1));
+      }, 1000 * (i + 1));
     });
   } else {
     $(".heading-exp").removeClass("heading-exp-show");
     $(".vin-card").each((i) => {
       setTimeout(() => {
         $(".vin-card").eq(i).removeClass("show-vin-card");
-      }, 500 * (i + 1));
+      }, 1000 * (i + 1));
     });
   }
 
