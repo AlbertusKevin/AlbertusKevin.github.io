@@ -74,8 +74,17 @@ $(window).scroll(function () {
     wScroll < $(".mini-project").offset().top + 1600
   ) {
     $(".heading-mini-project").addClass("heading-mini-project-show");
-    $(".mini-left").addClass("mini-left-show");
-    $(".mini-right").addClass("mini-right-show");
+
+    $(".mini-left").each((i) => {
+      setTimeout(() => {
+        $(".mini-left").eq(i).addClass("mini-left-show");
+      }, 300 * (i + 1));
+    });
+    $(".mini-right").each((i) => {
+      setTimeout(() => {
+        $(".mini-right").eq(i).addClass("mini-right-show");
+      }, 300 * (i + 1));
+    });
   } else {
     $(".heading-mini-project").removeClass("heading-mini-project-show");
     $(".mini-left").removeClass("mini-left-show");
