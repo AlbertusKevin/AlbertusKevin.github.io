@@ -60,13 +60,6 @@ $(window).scroll(function () {
         $(".card").eq(i).addClass("show");
       }, 500 * (i + 1));
     });
-  } else {
-    $(".heading-portfolio").removeClass("heading-portfolio-show");
-    $(".card").each((i) => {
-      setTimeout(() => {
-        $(".card").eq(i).removeClass("show");
-      }, 500 * (i + 1));
-    });
   }
 
   if (
@@ -85,10 +78,6 @@ $(window).scroll(function () {
         $(".mini-right").eq(i).addClass("mini-right-show");
       }, 300 * (i + 1));
     });
-  } else {
-    $(".heading-mini-project").removeClass("heading-mini-project-show");
-    $(".mini-left").removeClass("mini-left-show");
-    $(".mini-right").removeClass("mini-right-show");
   }
 
   if (
@@ -99,13 +88,6 @@ $(window).scroll(function () {
     $(".vin-card").each((i) => {
       setTimeout(() => {
         $(".vin-card").eq(i).addClass("show-vin-card");
-      }, 1000 * (i + 1));
-    });
-  } else {
-    $(".heading-exp").removeClass("heading-exp-show");
-    $(".vin-card").each((i) => {
-      setTimeout(() => {
-        $(".vin-card").eq(i).removeClass("show-vin-card");
       }, 1000 * (i + 1));
     });
   }
