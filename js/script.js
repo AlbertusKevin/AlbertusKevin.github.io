@@ -53,6 +53,15 @@ $(window).scroll(function () {
     $(".about-right").removeClass("p-show");
   }
 
+  if (
+    wScroll > $(".skill").offset().top - 400 &&
+    wScroll < $(".skill").offset().top + 600
+  ) {
+    $(".heading-skill").addClass("heading-skill-show");
+  } else {
+    $(".heading-skill").removeClass("heading-skill-show");
+  }
+
   if (wScroll > $(".card").offset().top - 700) {
     $(".heading-portfolio").addClass("heading-portfolio-show");
     $(".card").each((i) => {

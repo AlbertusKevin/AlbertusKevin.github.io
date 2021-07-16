@@ -181,6 +181,37 @@ nav {
 }
 
 /* ========================================================================== 
+*    skill
+=============================================================================*/
+.heading-skill {
+    opacity: 0;
+    transition: 1s;
+    transform: translate(0, -80px);
+}
+
+.heading-skill-show {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.progress-skill{
+    margin-bottom: 25px;
+}
+
+.image-skill{
+    border-radius: 15%;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.progress-bar-positioning{
+    align-self: center;
+}
+
+.skill{
+    padding-bottom: 50px;
+}
+/* ========================================================================== 
 *    untuk bagian portfolio
 =============================================================================*/
 .card {
