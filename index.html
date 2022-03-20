@@ -14,7 +14,7 @@
     <!-- Bagian Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-blue shadow fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Vin Albertus</a>
+            <a class="navbar-brand" href="#banner">Vin Albertus</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,22 +22,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Experience</a>
+                        <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Project</a>
+                        <a class="nav-link" href="#skillset">Skillset</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Mini Project</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Learning Result</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -46,18 +43,20 @@
     <!-- Akhir Bagian Navbar -->
 
     <!-- Bagian Banner -->
-    <section id="banner" class="banner text-center">
+    <section id="banner" class="banner lh-1 text-center">
         <img src="image/profile_picture.jpg" alt="Foto Profile Albertus Kevin"
-            class="banner-profile-picture rounded-circle img-thumbnail">
+            class="banner-profile-picture rounded-circle">
         <h1 class="display-4">Albertus Kevin</h1>
         <p class="lead">Web Developer | Content Creator</p>
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#030301" fill-opacity="1"
-                d="M0,160L48,149.3C96,139,192,117,288,106.7C384,96,480,96,576,117.3C672,139,768,181,864,213.3C960,245,1056,267,1152,250.7C1248,235,1344,181,1392,154.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-            </path>
-        </svg> -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="1"
+        <small class="text-white">Background by <a
+                href="https://unsplash.com/@alesnesetril?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                class="text-white">Ales
+                Nesetril</a> on <a
+                href="https://unsplash.com/s/photos/tech?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                class="text-white">Unsplash</a>
+        </small>
+        <svg id="about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#edfafd" fill-opacity="1"
                 d="M0,128L80,144C160,160,320,192,480,176C640,160,800,96,960,74.7C1120,53,1280,75,1360,85.3L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
             </path>
         </svg>
@@ -65,112 +64,277 @@
     <!-- Akhir Bagian Banner -->
 
     <!-- Bagian About -->
-    <section id="about">
+    <section>
         <div class="container">
-            <div class="row text-center mb-4">
-                <div class="col">
+            <div class="row mb-4">
+                <div class="col text-center">
                     <h2>About Me</h2>
+                    <hr>
                 </div>
             </div>
             <div class="row justify-content-evenly fs-5 text-center">
-                <div class="col-lg-4">
-                    <p>A career in web developer and software engineer, specifically in the areas of back-end engineer
+                <div class="col-lg-4 mb-4">
+                    <p class="paragraph">A career in web developer and software engineer, specifically in the areas of
+                        back-end engineer
                         in application, that will optimally utilize analytical skill, project management skill,
                         knowledge of Object Oriented Programming (OOP), and ability to integrate databases as well as
                         problem solving skill.</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Interested in and studying other fields such as front-end developers, computer networks, public
+                    <p class="paragraph">Interested in and studying other fields such as front-end developers, computer
+                        networks, public
                         speaking, body language, graphology, economics and investment, leadership, video editing, audio
                         editing, and outdoor enthusiasts. Also as a writer on a personal blog,vin-albertus.blogspot.com.
                     </p>
                 </div>
             </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#edfafd" fill-opacity="1"
-                d="M0,320L34.3,298.7C68.6,277,137,235,206,202.7C274.3,171,343,149,411,144C480,139,549,149,617,170.7C685.7,192,754,224,823,240C891.4,256,960,256,1029,245.3C1097.1,235,1166,213,1234,192C1302.9,171,1371,149,1406,138.7L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+        <svg id="experience" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#aed9da" fill-opacity="1"
+                d="M0,160L48,144C96,128,192,96,288,122.7C384,149,480,235,576,266.7C672,299,768,277,864,245.3C960,213,1056,171,1152,138.7C1248,107,1344,85,1392,74.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
             </path>
         </svg>
     </section>
     <!-- Akhir Bagian About -->
 
-    <!-- Bagian Projects -->
-    <section id="projects" class="section-light">
+    <!-- Bagian Experience -->
+    <section class="section-light">
         <div class="container">
             <div class="row text-center mb-4">
                 <div class="col">
-                    <h2>Projects</h2>
+                    <h2>Experience</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Experience 1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+                    <div class="vin-card mb-4">
+                        <div class="header">
+                            <h3 class="fw-bold">
+                                Summer Intern, Full Stack Developer
+                            </h3>
+                            <h6>PT Pragma Informatika, Bandung</h6>
+                            <h6 class="card-subtitle mb-3 text-muted">From May 2021 until July 2021</h6>
+                        </div>
+                        <div class="content">
+                            <p class="paragraph">
+                                An Software Developer Company established in 2010, have completed dozens of projects,
+                                focusing on creating software solution based on client’s needs and make products and
+                                offer
+                                customization to clients.</p>
+                            <p class="paragraph">Developed MCS (Module Customer Satisfaction) of Quality, Health,
+                                Safety,
+                                Environment (QHSE)
+                                system or K3L (Keselamatan, Kesehatan Kerja, dan Lingkungan) for BUMN client, Nindya
+                                Karya,
+                                especially ensure customer satisfaction on project about quality of construction and
+                                management quality.
+                                <ul>
+                                    <li>Build a layout that fits the user experience based on the design and needs that
+                                        have
+                                        been identified for Ingredient Quality Test and Customer Satisfaction</li>
+                                    <li>Integration between views, business logic, and database for processing data
+                                        Customer
+                                        Satisfaction</li>
+                                    <li>Report system in PDF and/or Excel for internal on MCS</li>
+                                    <li>Create Data Master for Survey Question that used in MCSAn </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Experience 2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+                    <div class="vin-card mb-4">
+                        <div class="header">
+                            <h3 class="fw-bolder">Assistant Lecturer Web Design</h3>
+                            <h6>Institut Teknologi Harapan Bangsa, Bandung</h6>
+                            <h6 class="card-subtitle mb-3 text-muted">From August 2020 until December 2020</h6>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Assisting lecturers in teaching Web Design courses, including HTML, CSS, Javascript, and
+                                JQuery libraries.
+                                <ul>
+                                    <li>Help to answer students questions during class hours.</li>
+                                    <li>Assisting lecturers in correcting student exercises, quizzes, and major
+                                        assignments.
+                                    </li>
+                                    <li>Provide feedback to students on exercises and assignments.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Experience 3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+                    <div class="vin-card mb-4">
+                        <div class="header">
+                            <h3 class="fw-bolder">Assistant Lecturer Pemrograman Berbasis Platform (PBP)</h3>
+                            <h6>Institut Teknologi Harapan Bangsa, Bandung</h6>
+                            <h6 class="card-subtitle mb-3 text-muted">From February 2022 until present</h6>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Assisting lecturers in teaching Web Service courses, including authentication, HTTP, and
+                                REST API using Go Language.
+                                <ul>
+                                    <li>Help to answer students questions during class hours.</li>
+                                    <li>Provide additional material and discuss the work of assignments.</li>
+                                    <li>Assisting lecturers in correcting student exercises, quizzes, and major
+                                        assignments.
+                                    </li>
+                                    <li>Provide feedback to students on exercises and assignments.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Experience 4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+                    <div class="vin-card mb-4">
+                        <h3 class="fw-bold">Portfolio Projects</h3>
+                        <h6 class="card-subtitle mb-3 text-muted">From June 2020 until now</h6>
+                        <p>
+                            Creating various kinds of web applications and small projek with different languages ​​and
+                            technologies,
+                            as a form of
+                            honing programming skills, project management, and software engineer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg id="skillset" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#edfafd" fill-opacity="1"
+                d="M0,128L40,138.7C80,149,160,171,240,160C320,149,400,107,480,106.7C560,107,640,149,720,160C800,171,880,149,960,149.3C1040,149,1120,171,1200,170.7C1280,171,1360,149,1400,138.7L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- Akhir Bagian Experience -->
+
+    <!-- Bagian Skillset -->
+    <section class="skillset">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col">
+                    <h2>Skillset</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row text-center justify-content-evenly">
+                <div class="col-md-10">
+                    <img src="image/logo/my_skill/frontend/html-5.png" alt="">
+                    <img src="image/logo/my_skill/frontend/css.png" alt="">
+                    <img src="image/logo/my_skill/frontend/java-script.png" alt="">
+                    <img src="image/logo/my_skill/frontend/bootstrap.png" alt="">
+                    <img src="image/logo/my_skill/backend/php.png" alt="PHP">
+                    <img src="image/logo/my_skill/backend/nodejs.png" alt="Node JS">
+                    <img src="image/logo/my_skill/backend/golang.png" alt="Go-Lang">
+                    <img src="image/logo/my_skill/backend/laravel.png" alt="Laravel">
+                    <img src="image/logo/my_skill/backend/java.png" alt="Java">
+                    <img src="image/logo/my_skill/database/mariaDB.png" alt="Maria DB">
+                    <img src="image/logo/my_skill/github.png" alt="Github">
+                    <img src="image/logo/my_skill/rest-api.png" alt="RESTful API">
+                    <img src="image/logo/my_skill/openapis-icon.svg" alt="Open API">
+                </div>
+            </div>
+        </div>
+        </div>
+        <svg id="portfolio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#aed9da" fill-opacity="1"
+                d="M0,192L80,192C160,192,320,192,480,208C640,224,800,256,960,245.3C1120,235,1280,181,1360,154.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path>
+        </svg>
+
+    </section>
+    <!-- Akhir Bagian Skillset -->
+
+    <!-- Bagian Projects -->
+    <section class="section-light">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col">
+                    <h2>Portfolio</h2>
+                    <hr>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="image/portfolio/celatuk.jpg" class="card-img-top" alt="Proyek media sosial Celatuk">
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa qui
-                                impedit amet rerum, minima voluptatibus inventore praesentium quasi hic facilis?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="image/portfolio/yuk-bisa-yuk.jpg" class="card-img-top"
+                    <div class="card shadow">
+                        <img src="image/portfolio/yuk-bisa-yuk.jpg" class="card-img-top img-thumbnail"
                             alt="Proyek aplikasi campaign Yuk-Bisa-Yuk">
                         <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa qui
-                                impedit amet rerum, minima voluptatibus inventore praesentium quasi hic facilis?</p>
+                            <h5 class="fw-bold">Yuk-Bisa-Yuk</h5>
+                            <h6 class="text-muted">Campaign, May 2021</h6>
+                            <p class="card-text lh-lg mt-4">Web application that manages campaigns such as donations
+                                and
+                                petitions.
+                                Built using Laravel, Bootstrap 4, and JQuery.
+                            </p>
+                        </div>
+                        <div class="card-footer text-end">
+                            <a href="https://github.com/AlbertusKevin/YukBisaYuk" class="btn btn-primary">Github</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="image/portfolio/meuble.jpg" class="card-img-top" alt="Proyek mini ERP Pesona Meuble">
+                    <div class="card shadow">
+                        <img src="image/portfolio/meuble.jpg" class="card-img-top img-thumbnail"
+                            alt="Proyek mini ERP Pesona Meuble">
                         <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa qui
-                                impedit amet rerum, minima voluptatibus inventore praesentium quasi hic facilis?</p>
+                            <h5 class="fw-bold">Pesona Meuble</h5>
+                            <h6 class="text-muted">Business App, November 2020</h6>
+                            <p class="card-text mt-4 lh-lg">A Web App to manage a furniture sales business. Using
+                                the
+                                PHP
+                                and
+                                Javascript programming language ​​with the laravel framework and bootstrap 4 (+
+                                Jquery).
+                            </p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="image/portfolio/yuk-bisa-yuk.jpg" class="card-img-top"
-                            alt="Proyek aplikasi campaign Yuk-Bisa-Yuk">
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa qui
-                                impedit amet rerum, minima voluptatibus inventore praesentium quasi hic facilis?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="image/portfolio/meuble.jpg" class="card-img-top" alt="Proyek mini ERP Pesona Meuble">
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa qui
-                                impedit amet rerum, minima voluptatibus inventore praesentium quasi hic facilis?</p>
+                        <div class="card-footer text-end">
+                            <a href="https://github.com/AlbertusKevin/Pesona-Meuble" class="btn btn-primary">Github</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#fff" fill-opacity="1"
+        <svg id="contact" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#edfafd" fill-opacity="1"
                 d="M0,192L48,181.3C96,171,192,149,288,138.7C384,128,480,128,576,122.7C672,117,768,107,864,133.3C960,160,1056,224,1152,218.7C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
             </path>
         </svg>
     </section>
-    <!-- Akhir Bagian Projects -->
+    <!-- Akhir Bagian Portfolio -->
 
     <!-- Bagian contact -->
-    <section id="contact">
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col">
                     <h2 class="text-center mb-4">Contact</h2>
+                    <hr>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
+            <div class="row justify-content-center text-center mt-4">
+                <div class="col-md-2 mb-4 mr-2">
+                    <a href="https://www.linkedin.com/in/vin-albertus/" target="_blank"><img class="image-media"
+                            class="image-media" src="image/logo/social_media/linkedin.svg" alt="linkedin" /></a>
+                </div>
+                <div class="col-md-2 mb-4 mr-2">
+                    <a href="https://www.instagram.com/vin_albertus/" target="_blank"><img class="image-media"
+                            src="image/logo/social_media/instagram.svg" alt="instagram" /></a>
+                </div>
+                <div class="col-md-2 mb-4 mr-2">
+                    <a href="https://www.facebook.com/vin.albertus" target="_blank"><img class="image-media"
+                            src="image/logo/social_media/facebook.svg" alt="facebook" /></a>
+                </div>
+                <div class="col-md-2 mb-4 mr-2">
+                    <a href="https://kevin-albertus.blogspot.com/" target="_blank"><img class="image-media"
+                            src="image/logo/social_media/blogger.svg" alt="blog" /></a>
+                </div>
+                <div class="col-md-2 mb-4 mr-2">
+                    <a class="gmail" href="mailto:vinalbertus@gmail.com" target="_blank"><img class="image-media"
+                            src="image/logo/social_media/gmail.svg" alt="gmail" /></a>
+                </div>
+                <!-- <div class="col-md-6">
                     <form>
                         <div class="mb-3">
                             <label for="name" class="form-label">Nama</label>
@@ -186,7 +350,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Kirim</button>
                     </form>
-                </div>
+                </div> -->
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -202,6 +366,7 @@
         <p class="text-center fs-5">&copy;2022 | Built by Albertus Kevin</p>
     </footer>
     <!-- Akhir Bagian Footer -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>

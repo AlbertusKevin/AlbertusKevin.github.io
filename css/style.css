@@ -5,10 +5,54 @@
     #aed9da
     #edfafd
 */
+body {
+  font-family: montserratregular;
+  background-color: #edfafd;
+}
 
+.section-light {
+  background-color: #aed9da;
+}
+
+section h2 {
+  font-weight: bold;
+  color: #135589;
+}
+
+hr {
+  width: 80%;
+  max-width: 700px;
+  border-top: 2px solid;
+  color: #394867;
+  margin: auto;
+}
+
+.paragraph {
+  text-indent: 30px;
+  line-height: 2;
+  text-align: justify;
+}
+
+/* ------------------------- navbar -------------------------*/
 .navbar-blue,
 footer {
   background-color: #135589;
+}
+/* ------------------------- banner -------------------------*/
+.banner h1,
+.banner p {
+  color: #f1f6f9;
+  text-shadow: 0 0 10px rgb(20, 39, 78);
+}
+
+.banner h1 {
+  font-family: montserratlight;
+  font-size: 45px;
+  /* font-weight: 600; */
+}
+
+.banner p {
+  font-size: 24px;
 }
 
 .banner {
@@ -22,9 +66,80 @@ footer {
 }
 
 .banner-profile-picture {
-  width: 200px;
+  width: 225px;
+  border: 3px solid #929292;
 }
 
-.section-light {
-  background-color: #edfafd;
+.banner small {
+  font-size: 14px;
+}
+
+/* bagian experience */
+.vin-card {
+  margin: auto;
+  padding: 15px 30px;
+  width: 100%;
+  border-radius: 8px;
+  border: solid 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 8px 10px rgb(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.vin-card h3 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: montserratmedium;
+}
+
+.vin-card p {
+  text-indent: 0;
+  line-height: 1.5;
+}
+
+/* Bagian skillset */
+.skillset img {
+  width: 125px;
+  margin: 25px;
+}
+
+/* Bagian contact */
+.image-media {
+  width: 125px;
+}
+/* =============================================================================
+* kustomisasi font  
+=============================================================================*/
+@font-face {
+  font-family: "chunkfive-print";
+  src: url("../font/chunkfive-print.woff");
+}
+
+@font-face {
+  font-family: "montserratregular";
+  src: url("../font/montserrat-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "montserratbold";
+  src: url("../font/montserrat-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "montserratmedium";
+  src: url("../font/montserrat-medium-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "montserratblack";
+  src: url("../font/montserrat-black-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "montserratsemibold";
+  src: url("../font/montserrat-semibold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "montserratlight";
+  src: url("../font/montserrat-light-webfont.woff") format("woff");
 }
