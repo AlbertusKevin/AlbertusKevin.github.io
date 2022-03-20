@@ -12,8 +12,12 @@ footer {
 }
 
 .banner {
-  padding-top: 6rem;
-  background-color: #aed9da;
+  padding-top: 8rem;
+  /* background-color: #aed9da; */
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   /* background-color: #edfafd; */
 }
 
