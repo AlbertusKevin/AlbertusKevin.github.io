@@ -5,8 +5,12 @@
     #aed9da
     #edfafd
 */
+
+/* ==============================================================================
+* ----------------------------------- overal ------------------------------------
+============================================================================== */
 body {
-  font-family: montserratregular;
+  font-family: nunito;
   background-color: #edfafd;
 }
 
@@ -15,8 +19,8 @@ body {
 }
 
 section h2 {
-  font-weight: bold;
   color: #135589;
+  font-family: league-spartan;
 }
 
 hr {
@@ -33,48 +37,111 @@ hr {
   text-align: justify;
 }
 
-/* ------------------------- navbar -------------------------*/
+.vin-card h3,
+.card-body h5,
+.modal-header h5 {
+  font-family: archivo;
+}
+
+.header h6 {
+  font-family: frank-ruhl-libre;
+}
+
+h6.text-muted {
+  font-family: nunito;
+  font-size: 15px;
+}
+
+.glamorphism {
+  border: solid 1px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13.7px);
+  -webkit-backdrop-filter: blur(13.7px);
+}
+
+.btn-github {
+  background-color: #2a93d5;
+  color: white;
+}
+/* ==============================================================================
+* ----------------------------------- navbar ------------------------------------
+============================================================================== */
 .navbar-blue,
 footer {
   background-color: #135589;
 }
-/* ------------------------- banner -------------------------*/
+
+.navbar-brand {
+  font-family: ubuntu;
+}
+
+.nav-item {
+  font-family: titillium-web;
+}
+/* ==============================================================================
+* ----------------------------------- banner ------------------------------------
+============================================================================== */
+
 .banner h1,
 .banner p {
   color: #f1f6f9;
   text-shadow: 0 0 10px rgb(20, 39, 78);
 }
 
-.banner h1 {
-  font-family: montserratlight;
-  font-size: 45px;
-  /* font-weight: 600; */
-}
-
-.banner p {
-  font-size: 24px;
-}
-
 .banner {
   padding-top: 8rem;
-  /* background-color: #aed9da; */
   background-image: url("../image/background.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* background-color: #edfafd; */
 }
 
 .banner-profile-picture {
-  width: 225px;
+  width: 200px;
   border: 3px solid #929292;
 }
 
-.banner small {
-  font-size: 14px;
+.banner h1 {
+  font-family: dejavu;
+  font-size: 34px;
 }
 
-/* bagian experience */
+.banner p {
+  font-size: 20px;
+  font-family: roboto-slab;
+}
+
+.banner small {
+  font-size: 12px;
+}
+
+/* responsive breakpoint */
+@media screen and (min-width: 576px) {
+  .banner {
+    padding-top: 10rem;
+  }
+
+  .banner-profile-picture {
+    width: 250px;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+  }
+
+  .banner p {
+    font-size: 24px;
+  }
+
+  .banner small {
+    font-size: 14px;
+  }
+}
+
+/* ==============================================================================
+* --------------------------------- experience ----------------------------------
+============================================================================== */
 .vin-card {
   margin: auto;
   padding: 15px 30px;
@@ -82,20 +149,9 @@ footer {
   border-radius: 8px;
 }
 
-.glamorphism,
-.vin-card {
-  border: solid 1px rgba(0, 0, 0, 0.3);
-  /* box-shadow: 10px 8px 10px rgb(0, 0, 0, 0.5); */
-  background-color: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(13.7px);
-  -webkit-backdrop-filter: blur(13.7px);
-}
-
 .vin-card h3 {
-  font-size: 18px;
-  font-weight: 500;
-  font-family: montserratmedium;
+  font-family: archivo;
+  font-size: 20px;
 }
 
 .vin-card p {
@@ -103,14 +159,22 @@ footer {
   line-height: 1.5;
 }
 
-/* Bagian skillset */
+/* ==============================================================================
+* ---------------------------------- skillset -----------------------------------
+============================================================================== */
 .skillset img {
   width: 125px;
   margin: 25px;
 }
 
+/* ==============================================================================
+* --------------------------------- portfolio -----------------------------------
+============================================================================== */
+.card-body {
+  min-height: 300px;
+}
 /* =============================================================================
-*   untuk bagian mini project
+* -------------------------------- mini project --------------------------------
 ============================================================================= */
 .mini-project img {
   margin-bottom: 20px;
@@ -126,40 +190,63 @@ footer {
 .image-media {
   width: 125px;
 }
+
+.accordion-header {
+  font-family: nurom;
+}
 /* =============================================================================
 * kustomisasi font  
 =============================================================================*/
+/* header section */
 @font-face {
-  font-family: "chunkfive-print";
-  src: url("../font/chunkfive-print.woff");
+  font-family: "archivo";
+  src: url("../fonts/Archivo-Regular.ttf");
 }
 
+/* paragraph */
 @font-face {
-  font-family: "montserratregular";
-  src: url("../font/montserrat-regular-webfont.woff") format("woff");
+  font-family: "nunito";
+  src: url("../fonts/Nunito-Regular.ttf");
 }
 
+/* header card */
 @font-face {
-  font-family: "montserratbold";
-  src: url("../font/montserrat-bold-webfont.woff") format("woff");
+  font-family: "league-spartan";
+  src: url("../fonts/LeagueSpartan-Bold.otf");
 }
 
+/* muted-text */
 @font-face {
-  font-family: "montserratmedium";
-  src: url("../font/montserrat-medium-webfont.woff") format("woff");
+  font-family: "frank-ruhl-libre";
+  src: url("../fonts/FrankRuhlLibre-Regular.ttf");
 }
 
+/* nav brand */
 @font-face {
-  font-family: "montserratblack";
-  src: url("../font/montserrat-black-webfont.woff") format("woff");
+  font-family: "titillium-web";
+  src: url("../fonts/TitilliumWeb-SemiBold.ttf");
 }
 
+/* role */
 @font-face {
-  font-family: "montserratsemibold";
-  src: url("../font/montserrat-semibold-webfont.woff") format("woff");
+  font-family: "roboto-slab";
+  src: url("../fonts/RobotoSlab-Regular.ttf");
 }
 
+/* button */
 @font-face {
-  font-family: "montserratlight";
-  src: url("../font/montserrat-light-webfont.woff") format("woff");
+  font-family: "nurom";
+  src: url("../fonts/Nurom-Bold.ttf");
+}
+
+/* navigation */
+@font-face {
+  font-family: "ubuntu";
+  src: url("../fonts/Ubuntu-Bold.ttf");
+}
+
+/* Nama di banner */
+@font-face {
+  font-family: "dejavu";
+  src: url("../fonts/DejaVuSans-Bold.ttf");
 }
