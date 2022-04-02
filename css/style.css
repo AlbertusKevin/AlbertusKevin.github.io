@@ -200,53 +200,53 @@ footer {
 /* header section */
 @font-face {
   font-family: "archivo";
-  src: url("../fonts/Archivo-Regular.ttf");
+  src: url("../fonts/Archivo-Regular.woff");
 }
 
 /* paragraph */
 @font-face {
   font-family: "nunito";
-  src: url("../fonts/Nunito-Regular.ttf");
+  src: url("../fonts/Nunito-Regular.woff");
 }
 
 /* header card */
 @font-face {
   font-family: "league-spartan";
-  src: url("../fonts/LeagueSpartan-Bold.otf");
+  src: url("../fonts/leaguespartan-bold-webfont.woff2");
 }
 
 /* muted-text */
 @font-face {
   font-family: "frank-ruhl-libre";
-  src: url("../fonts/FrankRuhlLibre-Regular.ttf");
+  src: url("../fonts/frankruhllibre-regular-webfont.woff2");
 }
 
 /* nav brand */
 @font-face {
   font-family: "titillium-web";
-  src: url("../fonts/TitilliumWeb-SemiBold.ttf");
+  src: url("../fonts/titilliumweb-semibold-webfont.woff2");
 }
 
 /* role */
 @font-face {
   font-family: "roboto-slab";
-  src: url("../fonts/RobotoSlab-Regular.ttf");
+  src: url("../fonts/RobotoSlab-Regular.woff");
 }
 
 /* button */
 @font-face {
   font-family: "nurom";
-  src: url("../fonts/Nurom-Bold.ttf");
+  src: url("../fonts/nurom-bold-webfont.woff2");
 }
 
 /* navigation */
 @font-face {
   font-family: "ubuntu";
-  src: url("../fonts/Ubuntu-Bold.ttf");
+  src: url("../fonts/ubuntu-bold-webfont.woff2");
 }
 
 /* Nama di banner */
 @font-face {
   font-family: "dejavu";
-  src: url("../fonts/DejaVuSans-Bold.ttf");
+  src: url("../fonts/dejavusans-bold-webfont.woff2");
 }
