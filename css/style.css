@@ -12,6 +12,7 @@
 body {
   font-family: nunito;
   background-color: #edfafd;
+  overflow-x: hidden;
 }
 
 .section-light {

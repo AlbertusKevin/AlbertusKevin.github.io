@@ -13,8 +13,8 @@
 
 <body>
     <!-- Bagian Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-blue shadow fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark navbar-blue shadow fixed-top">
+        <div class="container" style="overflow-x: hidden">
             <a class="navbar-brand fs-4" href="#banner">Vin Albertus</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,14 +51,14 @@
         <img src="image/profile_picture.jpg" alt="Foto Profile Albertus Kevin"
             class="banner-profile-picture rounded-circle">
         <h1 class="display-4">Albertus Kevin</h1>
-        <p class="lead">Web Developer | Software Engineer</p>
-        <small class="text-white">Background by <a
+        <p class="lead"></p>
+        <!-- <small class="text-white">Background by <a
                 href="https://unsplash.com/@alesnesetril?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                 class="text-white">Ales
                 Nesetril</a> on <a
                 href="https://unsplash.com/s/photos/tech?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                 class="text-white">Unsplash</a>
-        </small>
+        </small> -->
         <svg id="about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#edfafd" fill-opacity="1"
                 d="M0,128L80,144C160,160,320,192,480,176C640,160,800,96,960,74.7C1120,53,1280,75,1360,85.3L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
@@ -69,7 +69,7 @@
 
     <!-- Bagian About -->
     <section>
-        <div class="container">
+        <div class="container" style="overflow-x: hidden">
             <div class="row mb-4 section-header">
                 <div class="col text-center">
                     <h2 data-aos="zoom-in-up">About Me</h2>
@@ -107,7 +107,7 @@
 
     <!-- Bagian Experience -->
     <section class="section-light">
-        <div class="container">
+        <div class="container" style="overflow-x: hidden">
             <div class="row text-center mb-4 section-header">
                 <div class="col">
                     <h2>Experience</h2>
@@ -226,7 +226,7 @@
 
     <!-- Bagian Skillset -->
     <section class="skillset">
-        <div class="container">
+        <div class="container" style="overflow-x: hidden">
             <div class="row text-center mb-4 section-header">
                 <div class="col">
                     <h2>Skillset</h2>
@@ -263,7 +263,7 @@
 
     <!-- Bagian Portfolio -->
     <section class="section-light portfolio">
-        <div class="container">
+        <div class="container" style="overflow-x: hidden">
             <div class="row text-center mb-4 section-header">
                 <div class="col">
                     <h2>Portfolio</h2>
@@ -321,7 +321,7 @@
 
     <!-- Bagian mini project -->
     <section class="section">
-        <div class="container">
+        <div class="container" style="overflow-x: hidden">
             <div class="row section-header">
                 <div class="col">
                     <h2 class="text-center mb-4">Mini Project</h2>
@@ -683,7 +683,7 @@
 
     <!-- Bagian contact -->
     <section class="section-light section contact">
-        <div class="container">
+        <div class="container" style="overflow-x: hidden">
             <div class="row section-header" data-aos-offset="50">
                 <div class="col">
                     <h2 class="text-center mb-4">Contact</h2>
@@ -872,6 +872,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         const sectionHeader = document.querySelectorAll(".section-header h2");
@@ -926,6 +927,36 @@
         AOS.init({
             duration: 1000,
         });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/TextPlugin.min.js"></script>
+    <script>
+        gsap.registerPlugin(TextPlugin);
+        gsap.from('.banner img', {
+            duration: 2,
+            y: 100,
+            opacity: 0,
+            ease: 'back'
+        })
+        gsap.from('.navbar', {
+            duration: 1.5,
+            y: '-100%',
+            opacity: 0,
+            ease: 'bounce'
+        })
+        gsap.from('.display-4', {
+            duration: 1,
+            x: -50,
+            opacity: 0,
+            delay: 0.5,
+            ease: 'elastic'
+        })
+        gsap.to('.lead', {
+            duration: 2,
+            delay: 1.5,
+            text: 'Web Developer | Software Engineer'
+        })
     </script>
 </body>
 
